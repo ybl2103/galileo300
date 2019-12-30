@@ -1,0 +1,534 @@
+.arrow-house {
+  min-width: 60px;
+  text-align: center;
+  padding: 10px;
+}
+
+.btn-box {
+  position: relative;
+  padding: 0 10px;
+  min-width: 100px;
+  height: 30px;
+  text-align: right;
+  margin: 20px 0px;
+}
+
+.btn-car {
+  width: 28px;
+  height: 28px;
+  padding: 2px 2px 2px 1px;
+  margin: 1px 0px 1px 3px;
+  font-size: 12px;
+  line-height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000000;
+}
+
+.btn-icon {
+  padding: 2px;
+  font-size: 24px;
+  line-height: 9px;
+  border-radius: 50%;
+  border-width: 0.25px;
+  color: rgba(255, 255, 255, 0.5);
+  vertical-align: middle;
+}
+
+.insp-button-case {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 22px;
+  height: 42px;
+  padding: 7px 0 0 0;
+  background-color: #6c757d;
+  /* border-radius: 26px; */
+}
+
+.insp-btn {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  padding: 2px 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btnClicked {
+  color: rgba(255, 255, 255);
+}
+
+.rearBtnClicked {
+  background-color: rgb(0, 0, 0);
+}
+
+.carBtnClicked {
+  background-color: rgba(255, 255, 255);
+}
+
+.rearCarBtnClicked {
+  border-width: 2px;
+  border-color: #000000;
+}
+
+.car1,
+.car2,
+.car3,
+.car4,
+.car5,
+.car6,
+.car7,
+.car8,
+.carCall {
+  opacity: 100%;
+}
+
+.card-car {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-body-car {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: flex;
+  /* 5 floors: 265; 10 floors: 515; 15 floors :765 */
+  max-height: 410px;
+}
+
+.compact {
+  max-height: 265px;
+}
+
+.doorLoc {
+  min-width: 60px;
+  text-align: center;
+  padding: 0;
+}
+
+.doorStat {
+  text-align: center;
+}
+
+.elev {
+  height: 35px;
+  width: 25px;
+  background-color: #ffffff;
+  position: relative;
+  margin: 0 auto;
+  top: 17.5px;
+}
+
+.elevShaft {
+  width: 18%;
+  background-color: #0000000e;
+  align-content: center;
+  float: left;
+  background-attachment: local;
+}
+
+.elevMode {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.floorLabel,
+.timer {
+  display: inline-block;
+  color: "white";
+  vertical-align: middle;
+  font-size: 14px;
+  padding: 0px 2px;
+}
+
+.timer-box {
+  height: 24px;
+  width: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+.up {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.down {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #000000;
+}
+
+.inactive {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.io-box {
+  width: 100%;
+}
+
+.io-container {
+  overflow-y: auto;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.io-column {
+  float: left;
+  width: 20%;
+}
+
+.io-group {
+  padding: 1px 0;
+}
+
+.io-label {
+  height: 25px;
+  width: 60px;
+  margin: 4px auto;
+  background-color: rgba(255, 255, 255, 0.25);
+  /* padding: 5px 0 5px 8px; */
+}
+
+.io-stat {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #c5c5c5;
+}
+
+.io-switch-relay {
+  text-align: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: rgba(255, 255, 255, 0.25);
+  /* display: flex; */
+  height: 90px;
+}
+
+.io-switches,
+.io-relays {
+  display: flex;
+  justify-content: center;
+  /* margin-right: 18px; */
+}
+
+@media (min-width: 1024px) {
+  .io-switches,
+  .io-relays {
+    margin-right: 0;
+  }
+}
+
+.io-switch-group,
+.io-relay-group {
+  padding: 0 5px;
+  text-align: center;
+}
+
+.io-switch-box {
+  text-align: center;
+  padding: 10px 0 0 0;
+  width: 35px;
+  height: 90px;
+}
+
+.locked {
+  color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.modules {
+  width: 20%;
+  min-width: 60px;
+  float: left;
+  background-color: #0000000e;
+  align-content: center;
+  position: relative;
+}
+
+.overview {
+  width: 80%;
+  float: left;
+  min-width: 220px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.partition {
+  width: 41%;
+  float: left;
+}
+
+/* for the sliding toggle */
+input:checked + .slider {
+  background-color: #c5c5c5;
+}
+
+/* for the sliding toggle */
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+/* for the sliding toggle */
+input:checked + .slider:before {
+  -webkit-transform: translateX(19px);
+  -ms-transform: translateX(19px);
+  transform: translateX(19px);
+}
+
+/* for the sliding toggle */
+input:checked + .slider.vertical:before {
+  -webkit-transform: translateY(17px);
+  -ms-transform: translateY(17px);
+  transform: translateY(17px);
+}
+
+.service-settings {
+  width: 100%;
+  height: 410px;
+}
+
+.car-settings,
+.group-settings,
+.configure {
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.setting-label {
+  width: 150px;
+  height: 50px;
+  display: inline-block;
+}
+
+.setting-tgl {
+  width: 45px;
+  height: 45px;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+/* for the sliding toggle */
+.switch {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45px;
+  height: 26px;
+}
+
+.switch-vertical {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 22px;
+  height: 42px;
+  padding: 2px;
+}
+
+/* for the sliding toggle */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* for the sliding toggle */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #6c757d;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* for the sliding toggle */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 3.5px;
+  bottom: 3.5px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider.vertical:before {
+  height: 16px;
+  width: 16px;
+  top: 3.5px;
+  left: 3px;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 26px;
+}
+
+/* for the sliding toggle */
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* to label all rear doors;  */
+.rear {
+  opacity: 1;
+}
+
+/* for the car call buttons rear label */
+.rearLbl {
+  padding: 0 4px 0 2px;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.velocity-box,
+.position-box {
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 10px 0;
+}
+
+.anchor {
+  position: absolute;
+  bottom: 0;
+  margin: 15px;
+}
+
+.velocity-value {
+  display: inline-block;
+  text-align: right;
+}
+.velocity-units {
+  display: inline-block;
+  text-align: left;
+}
+
+.position-label,
+.position-value {
+  display: inline-block;
+  margin: 2px;
+}
+
+@media (min-height: 700px) {
+  .card-body-car {
+    max-height: 470px;
+  }
+  .service-settings {
+    height: 470px;
+  }
+}
+
+@media (min-height: 768px) {
+  .card-body-car {
+    max-height: 520px;
+  }
+  .io-container {
+    height: 360px;
+  }
+  .service-settings {
+    height: 520px;
+  }
+}
+
+@media (min-height: 812px) {
+  .card-body-car {
+    max-height: 560px;
+  }
+  .io-container {
+    height: 400px;
+  }
+  .io-switch-relay {
+    height: 180px;
+  }
+  .service-settings {
+    height: 560px;
+  }
+}
+
+@media (min-height: 900px) {
+  .card-body-car {
+    max-height: 660px;
+  }
+  .service-settings {
+    height: 660px;
+  }
+}
+
+@media (min-height: 1024px) {
+  .card-body-car {
+    max-height: 770px;
+  }
+  .io-container {
+    height: 610px;
+  }
+  .service-settings {
+    height: 770px;
+  }
+}
+
+@media (min-height: 1366px) {
+  .card-body-car {
+    max-height: 1020px;
+  }
+  .io-switch-relay {
+    height: 180px;
+  }
+  .io-container {
+    height: 840px;
+  }
+  .service-settings {
+    height: 1020px;
+  }
+}
+
+.disconnected {
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 3;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border: 0px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.disconnect-label {
+  color: #ffffff;
+  font-size: 24px;
+  position: relative;
+  z-index: 101;
+  display: inline-block;
+  top: 45%;
+}
+
+.connected {
+  background-color: #ffffff00;
+  color: #ffffff00;
+}

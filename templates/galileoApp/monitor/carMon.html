@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends "galileoApp/base.html" %}
+    {% block content_block %}
+    <!-- Breadcrumbs-->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="{% url 'galileoApp:monitor' %}">Monitor Cars</a>
+        </li>
+        <li class="breadcrumb-item active">{{breadcrumb}}</li>
+    </ol>
+    {% endblock %}

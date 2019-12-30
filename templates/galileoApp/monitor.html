@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% extends "galileoApp/base.html" %} {% block content_block %}
+<!-- Breadcrumbs-->
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="{% url 'index' %}">Dashboard</a>
+  </li>
+  <li class="breadcrumb-item active">{{ breadcrumb }}</li>
+</ol>
+
+<div class="row">
+  <script>
+    let socket = connectToSocket(); //connects webpage to websocket
+
+    var cars = [];
+    var aut = 0;
+    var ins = 1;
+    var blu = 2; //elev mode
+
+    $.get(
+      "/static/databases/init.json",
+      function(data) {
+        let init = JSON.parse(data);
+        let grpSze = init.floorData.numCars;
+
+        for (let i = 1; i <= grpSze; i++) {
+          genCar(i, init, aut); //generates the car display panel
+          let car = makeElev("car" + i, init.floorData, aut); //this makes an elevator object for floor tracking
+          cars.push(car); //stores the elvator object in a list
+        }
+
+        SimpleScrollbar.initAll();
+      },
+      "text"
+    );
+  </script>
+</div>
+{% endblock %}
