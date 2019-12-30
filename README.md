@@ -18,6 +18,7 @@ The navigation bar and the sidebar elements are mainly implemented with direct H
 function to recycle the common elements between each webpage in the sidebar. So far, only the Group Monitor screen has been fully 
 implemented. 
 
+#### Javascript Implementations
 The elements on the Group Monitor screen are dynamically rendered. The HTML template for the Group Monitor screen calls a JSON file from
 the Databases folder as a reference for how to build the interface components. The JSON file is a description of the specific job the
 Galileo 3.0 is representing. The information in the JSON file includes the number of floors, the number of elevators, and the types of
@@ -30,6 +31,7 @@ Prior to the implementation of live updates and complete controller to browser c
 elevator icon would move up and down in the shaft in response. The implementation is incredibly rudimentary and strictly for visual,
 demonstrational purposes, as such it can only handle one call at a time. 
 
+#### CSS Styling
 The element styling is mainly based off of the Bootstrap CSS library with some adjustments. In addition to the Bootstrap CSS library, I 
 also created custom elements to better fit the needs of the application, all of which can be found under "css/galElements.css". For 
 aesthetic purposes, I have also integrated the [Simple-Scrollbar](https://github.com/buzinas/simple-scrollbar) plugin. 
